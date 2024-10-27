@@ -1,0 +1,18 @@
+.square{
+    width: 30px;
+    height: 30px;
+    background: purple;
+    animation: 3s ease-in-out 5s 10 square-animation ;
+}
+
+@keyframes square-animation {
+    0% {
+
+
+    }
+    50% {
+    background-color: #3f51b5;
+    transform: translate(300px, 200px) scale(2);
+
+    }
+}

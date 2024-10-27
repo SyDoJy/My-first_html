@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background: #8448d9;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.title-top{
+    font-size: 75px;
+    color: #fff;
+    animation: top_Anim 5s ease-in-out 5s infinite;
+}
+.title-bottom{
+    margin-top: 20px;
+    font-size: 19px;
+    color: #fff;
+    animation: myAnim 5s ease-in-out 5s infinite;
+}
+
+@keyframes top_Anim {
+    0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes myAnim {
+    0% {
+		opacity: 0;
+		transform: translateY(0);
+	}
+
+    50% {
+        opacity: 0.5;
+        transform: translateY(0);
+    }
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
