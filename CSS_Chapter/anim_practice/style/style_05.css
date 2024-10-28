@@ -20,7 +20,7 @@
     margin-top: 20px;
     font-size: 19px;
     color: #fff;
-    animation: myAnim 5s ease-in-out 5s infinite;
+    animation: myAnim 5s ease-in-out 5s infinite forwards;
 }
 
 @keyframes top_Anim {
