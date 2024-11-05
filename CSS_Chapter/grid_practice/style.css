@@ -1,0 +1,24 @@
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    width: 20.833vw;
+    height: 20.833vw;
+    gap: 0px;
+    
+}
+
+.square {
+    width: 2.604vw;
+    height: 2.604vw;
+}
+
+.white {
+    background-color: rgb(213, 220, 165);
+    
+}
+
+.black {
+    background-color: black;
+    
+}

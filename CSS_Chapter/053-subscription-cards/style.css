@@ -1,0 +1,108 @@
+body {
+    /* Используется шрифт Montserrat для текста внутри body */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #d3c9af;
+    gap: 30px;
+    
+}
+
+.card {
+    /* Цвет фона карточки */
+    background-color: #d7cf94;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px -2px 17px 9px rgba(34, 60, 80, 0.35);
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    transition: background-color 0.2s linear;
+}
+
+.card:hover {
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+    0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+        background-color: rgb(222, 191, 15);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.card h2 {
+    /* Внутренний отступ для заголовка h2 */
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.price {
+    /* Размер шрифта цены */
+    font-size: 20px;
+    /* Жирное начертание для цены */
+    font-weight: bold;
+}
+
+
+.button {
+    /* Цвет фона кнопки */
+    background-color: #4CAF50;
+    border-radius: 10%;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    /* Выравнивание текста по центру */
+    text-align: center;
+    padding: 10px 20px;
+    outline: 1px solid #f6ff00;
+    transition: outline 1s ease 0s;
+    
+}
+
+.button:hover {
+    /* Изменение цвета фона кнопки при наведении */
+    background-color: #37873b;
+    outline: 5px solid #f2ff00;
+}
+
+
+
+ul {
+    /* Удаление маркеров списка */
+    list-style: none;
+    /* Внешний отступ списка */
+    margin:0 auto;
+    /* Удаление внутренних отступов у списка */
+    padding: 0;
+    /* Выравнивание текста по центру */
+    text-align: center;
+}
+
+li {
+    /* Внешний отступ элементов списка */
+    margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        /* Изменение направления отображения элементов при ширине экрана до 768px */
+        flex-direction: column;
+        /* Выравнивание элементов по центру при изменении направления */
+        align-items: center;
+    }
+}
